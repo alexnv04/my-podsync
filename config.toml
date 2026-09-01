@@ -1,12 +1,13 @@
 [server]
 port = 8080
+hostname = "https://my-podsync.onrender.com"
 
 [storage]
   [storage.local]
   data_dir = "/app/data"
 
 [tokens]
-youtube = "AIzaSyB8KlRJZxB6Bj7Doq3l4FyVt1qq8qqHivs"
+youtube = "YOUR_YOUTUBE_API_KEY_HERE"
 
 [feeds]
   [feeds.frmathew]
