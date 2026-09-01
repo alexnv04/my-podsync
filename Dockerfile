@@ -1,6 +1,7 @@
 FROM ghcr.io/mxpv/podsync:latest
 
-RUN wget https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -O /usr/bin/yt-dlp && \
+RUN echo "cache-bust: 2026-09-01" && \
+    wget https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -O /usr/bin/yt-dlp && \
     chmod a+rx /usr/bin/yt-dlp && \
     ln -sf /usr/bin/yt-dlp /usr/bin/youtube-dl
 
