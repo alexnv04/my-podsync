@@ -5,9 +5,9 @@ hostname = "https://my-podsync.onrender.com"
 [storage]
   [storage.local]
   data_dir = "/app/data"
-
-[tokens]
-youtube = "AIzaSyBR1i3dbYX-iJeHXDdwSganafyws-aqAzw"
+  
+[token]
+  youtube = "AIzaSyDRjxawwTFSqAUwynUP3ZqLYiWEFvc-YLs"
 
 [feeds]
   [feeds.frmathew]
@@ -17,6 +17,4 @@ youtube = "AIzaSyBR1i3dbYX-iJeHXDdwSganafyws-aqAzw"
   quality = "high"
   format = "audio"
   clean = { keep_last = 2 }
-  custom_args = [
-    "--extractor-args", "youtube:player_client=ios,android"
-  ]
+  youtube_dl_args = ["--extractor-args", "youtube:player_client=ios,android"]
