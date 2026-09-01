@@ -18,5 +18,6 @@ youtube = "AIzaSyDRjxawwTFSqAUwynUP3ZqLYiWEFvc-YLs"
   format = "audio"
   clean = { keep_last = 2 }
   youtube_dl_args = [
+  "--verbose",
   "--extractor-args", "youtubepot-bgutilhttp:base_url=https://bgutil-ytdlp-pot-provider-latest-jzf2.onrender.com"
 ]
