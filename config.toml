@@ -19,5 +19,6 @@ youtube = "AIzaSyDRjxawwTFSqAUwynUP3ZqLYiWEFvc-YLs"
   clean = { keep_last = 2 }
   youtube_dl_args = [
   "--verbose",
+  "--js-runtimes", "quickjs",
   "--extractor-args", "youtubepot-bgutilhttp:base_url=https://bgutil-ytdlp-pot-provider-latest-jzf2.onrender.com"
 ]
