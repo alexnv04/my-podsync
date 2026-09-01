@@ -17,4 +17,6 @@ youtube = "AIzaSyDRjxawwTFSqAUwynUP3ZqLYiWEFvc-YLs"
   quality = "high"
   format = "audio"
   clean = { keep_last = 2 }
-  youtube_dl_args = ["--extractor-args", "youtube:player_client=ios,android"]
+  youtube_dl_args = [
+  "--extractor-args", "youtubepot-bgutilhttp:base_url=https://bgutil-ytdlp-pot-provider-latest-jzf2.onrender.com"
+]
