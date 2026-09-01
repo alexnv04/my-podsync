@@ -5,9 +5,9 @@ hostname = "https://my-podsync.onrender.com"
 [storage]
   [storage.local]
   data_dir = "/app/data"
-  
-[token]
-  youtube = "AIzaSyDRjxawwTFSqAUwynUP3ZqLYiWEFvc-YLs"
+
+[tokens]
+youtube = "AIzaSyDRjxawwTFSqAUwynUP3ZqLYiWEFvc-YLs"
 
 [feeds]
   [feeds.frmathew]
