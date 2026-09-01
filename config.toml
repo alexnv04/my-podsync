@@ -1,6 +1,7 @@
 [server]
 port = 8080
 hostname = "https://my-podsync.onrender.com"
+data_dir = "/app/data"
 
 [storage]
   [storage.local]
@@ -12,8 +13,9 @@ youtube = "AIzaSyB8KlRJZxB6Bj7Doq3l4FyVt1qq8qqHivs"
 [feeds]
   [feeds.frmathew]
   url = "https://www.youtube.com/channel/UCsEfdsXejpne93addKoOhIw"
-  page_size = 3
+  page_size = 2
   update_period = "1h"
   quality = "high"
   format = "audio"
   clean = { keep_last = 2 }
+  youtube_dl_args = ["--cookies", "/app/cookies.txt"]
