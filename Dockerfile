@@ -7,6 +7,3 @@ RUN wget https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -O /us
 
 COPY config.toml /app/config.toml
 WORKDIR /app
-
-# Using shell form to ensure environment variables are evaluated
-CMD ["sh", "-c", "/app/podsync --config /app/config.toml"]
