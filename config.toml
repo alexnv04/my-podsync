@@ -7,6 +7,9 @@ data_dir = "/app/data"
   [storage.local]
   data_dir = "/app/data"
 
+[tokens]
+# Podsync loads tokens from PODSYNC_YOUTUBE_API_KEY environment variable
+
 [feeds]
   [feeds.frmathew]
   url = "https://www.youtube.com/channel/UCsEfdsXejpne93addKoOhIw"
